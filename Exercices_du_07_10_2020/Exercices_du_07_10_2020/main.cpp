@@ -16,6 +16,13 @@ int main()
 	AfficheVecteur3D(vVecteurDefaut);
 	cout << "Affichage du Vecteur 2 : " << endl;
 	AfficheVecteur3D(vVecteurDefini);
+	
+	//Question 70)
+	cout << "Notre Vecteur 1 et notre Vecteur 2 sont identiques : " << endl;
+	if (cVecteur3d::Coincide(&vVecteurDefaut, &vVecteurDefini)) //Passage par adresse.
+		cout << "-Cela est vrai." << endl;
+	else
+		cout << "-Cela est faux." << endl;
 
 	return 0;
 }

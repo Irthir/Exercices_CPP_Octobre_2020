@@ -6,14 +6,22 @@ private:
 	float m_fX, m_fY, m_fZ;
 public:
 	//Question 69) a)
-	cVecteur3d();
+	//cVecteur3d();
 	//cVecteur3d(float fX, float fY, float fZ);
 	//Question 69) b)
-	cVecteur3d(float fX, float fY, float fZ);
+	//cVecteur3d(float fX=0.0, float fY=0.0, float fZ=0.0);
 	//Question 69) c)
-	//inline cVecteur3d(float fX = 0, float fY = 0, float fZ = 0){ this->m_fX = fX; this->m_fY = fY; this->m_fZ = fZ; }
+	inline cVecteur3d(float fX = 0.0, float fY = 0.0, float fZ = 0.0){ this->m_fX = fX; this->m_fY = fY; this->m_fZ = fZ; }
 
-	//inline cVecteur3d() { this->m_fX = 0; this->m_fY = 0; this->m_fZ = 0; };
+	//Question 70) a)
+	static bool Coincide(cVecteur3d v1, cVecteur3d v2);
+	//Question 70) b)
+	static bool Coincide(cVecteur3d* v1, cVecteur3d* v2);
+	//Question 70) b)
+	static bool Coincide(cVecteur3d &v1, cVecteur3d &v2);
+	
+	//Question 71) a)
+	static float Normax(cVecteur3d v1, cVecteur3d v2);
 
 	//Les assesseurs :
 	inline const float getX() { return this->m_fX; }
