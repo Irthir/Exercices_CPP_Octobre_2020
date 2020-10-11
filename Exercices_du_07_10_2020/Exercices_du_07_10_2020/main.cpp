@@ -1,5 +1,6 @@
 #include <iostream>
 #include "vecteur3d.h"
+#include "vecteur3d_exo72.h"
 
 using namespace std;
 
@@ -26,6 +27,29 @@ int main()
 
 	//Question 71)
 	cout << "La norme la plus grande parmis nos deux vecteur est : " << cVecteur3d::Normax(vVecteurDefaut, vVecteurDefini) << endl;
+
+
+	//Question 72)
+	//On crée d'abord deux vecteurs 1.1.1 et 2.2.2
+	Vecteur3d_exo72 Vecteur1(1, 1, 1);
+	Vecteur3d_exo72 Vecteur2(2, 2, 2);
+	
+	cout << "Affichage du Vecteur 1 :" << endl;
+	Vecteur1.Affichage();
+	
+	cout << "Affichage du Vecteur 2 :" << endl;
+	Vecteur2.Affichage();
+	
+	Vecteur3d_exo72 VecteurSomme;
+	VecteurSomme = Vecteur1.Somme(Vecteur2);
+	
+	cout << "Affichage du Vecteur Somme :" << endl;
+	VecteurSomme.Affichage();
+
+	float fScalaire = 0.0f;
+	fScalaire = Vecteur1.Scalaire(Vecteur2);
+
+	cout << "Le produit scalaire du vecteur 1 par le vecteur 2 vaut : " << fScalaire << endl;
 
 	return 0;
 }
