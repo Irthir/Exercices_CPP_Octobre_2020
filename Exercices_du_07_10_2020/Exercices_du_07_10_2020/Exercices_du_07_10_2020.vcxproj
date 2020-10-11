@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="point.cpp" />
     <ClCompile Include="vecteur3d.cpp" />
     <ClCompile Include="Vecteur3d_exo72.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="point.h" />
     <ClInclude Include="vecteur3d.h" />
     <ClInclude Include="vecteur3d_exo72.h" />
   </ItemGroup>
