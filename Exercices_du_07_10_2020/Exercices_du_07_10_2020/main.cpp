@@ -24,6 +24,9 @@ int main()
 	else
 		cout << "-Cela est faux." << endl;
 
+	//Question 71)
+	cout << "La norme la plus grande parmis nos deux vecteur est : " << cVecteur3d::Normax(vVecteurDefaut, vVecteurDefini) << endl;
+
 	return 0;
 }
 

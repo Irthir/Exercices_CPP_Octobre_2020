@@ -19,9 +19,13 @@ public:
 	static bool Coincide(cVecteur3d* v1, cVecteur3d* v2);
 	//Question 70) b)
 	static bool Coincide(cVecteur3d &v1, cVecteur3d &v2);
-	
+
 	//Question 71) a)
 	static float Normax(cVecteur3d v1, cVecteur3d v2);
+	//Question 71) b)
+	static void Normax(cVecteur3d v1, cVecteur3d v2, float &fNormax);
+	//Question 71) c)
+	static void Normax(cVecteur3d v1, cVecteur3d v2, float *fNormax);
 
 	//Les assesseurs :
 	inline const float getX() { return this->m_fX; }

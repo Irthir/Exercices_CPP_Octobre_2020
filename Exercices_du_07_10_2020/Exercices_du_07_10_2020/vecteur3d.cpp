@@ -70,3 +70,33 @@ float cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2)
 	else
 		return fNorme2;
 }
+
+//Question 71) b)
+void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float& fNormax)
+//BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
+//ENTREE : Deux vecteurs 3D.
+//SORTIE : La norme la plus élevées parmis les deux normes.
+{
+	float fNorme1 = (float)sqrt((double)v1.getX() * v1.getX() + (double)v1.getY() * v1.getY() + (double)v1.getZ() * v1.getZ());
+	float fNorme2 = (float)sqrt((double)v2.getX() * v2.getX() + (double)v2.getY() * v2.getY() + (double)v2.getZ() * v2.getZ());
+
+	if (fNorme1 >= fNorme2)
+		fNormax=fNorme1;
+	else
+		fNormax=fNorme2;
+}
+
+//Question 71) c)
+void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float *fNormax)
+//BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
+//ENTREE : Deux vecteurs 3D.
+//SORTIE : La norme la plus élevées parmis les deux normes.
+{
+	float fNorme1 = (float)sqrt((double)v1.getX() * v1.getX() + (double)v1.getY() * v1.getY() + (double)v1.getZ() * v1.getZ());
+	float fNorme2 = (float)sqrt((double)v2.getX() * v2.getX() + (double)v2.getY() * v2.getY() + (double)v2.getZ() * v2.getZ());
+
+	if (fNorme1 >= fNorme2)
+		*fNormax = fNorme1;
+	else
+		*fNormax = fNorme2;
+}
