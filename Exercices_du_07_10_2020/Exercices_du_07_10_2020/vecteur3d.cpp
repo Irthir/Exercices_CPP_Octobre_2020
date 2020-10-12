@@ -30,7 +30,7 @@
 
 
 //Question 70) a)
-bool cVecteur3d::Coincide(cVecteur3d v1, cVecteur3d v2)
+bool const cVecteur3d::Coincide(cVecteur3d v1, cVecteur3d v2)
 //BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
 //ENTREE : Deux vecteurs.
 //SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
@@ -39,7 +39,7 @@ bool cVecteur3d::Coincide(cVecteur3d v1, cVecteur3d v2)
 }
 
 //Question 70) b)
-bool cVecteur3d::Coincide(cVecteur3d *v1, cVecteur3d *v2)
+bool const cVecteur3d::Coincide(cVecteur3d *v1, cVecteur3d *v2)
 //BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
 //ENTREE : Deux vecteurs.
 //SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
@@ -48,7 +48,7 @@ bool cVecteur3d::Coincide(cVecteur3d *v1, cVecteur3d *v2)
 }
 
 //Question 70) c)
-bool cVecteur3d::Coincide(cVecteur3d& v1, cVecteur3d& v2)
+bool const cVecteur3d::Coincide(cVecteur3d& v1, cVecteur3d& v2)
 //BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
 //ENTREE : Deux vecteurs.
 //SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
@@ -57,7 +57,7 @@ bool cVecteur3d::Coincide(cVecteur3d& v1, cVecteur3d& v2)
 }
 
 //Question 71) a)
-float cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2)
+float const cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2)
 //BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
 //ENTREE : Deux vecteurs 3D.
 //SORTIE : La norme la plus élevées parmis les deux normes.

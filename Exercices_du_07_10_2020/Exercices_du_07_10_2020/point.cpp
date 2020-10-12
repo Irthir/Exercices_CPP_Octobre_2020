@@ -17,7 +17,7 @@ CPoint::~CPoint()
 }
 
 //La fonction statique permettant de récupérer le nombre actuel de point instanciés dans le programme.
-float CPoint::Nombre()
+float const CPoint::Nombre()
 //BUT : Retourner le nombre de points actuellement dans le programme.
 //ENTREE : La valeur statique m_nCompteur de la classe CPoint.
 //SORTIE : Le nombre de points actuellement dans le programme.

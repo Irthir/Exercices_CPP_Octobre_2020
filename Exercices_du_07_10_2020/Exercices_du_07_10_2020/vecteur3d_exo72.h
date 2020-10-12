@@ -9,11 +9,11 @@ public:
 	Vecteur3d_exo72(float fX=0.0, float fY=0.0, float fZ=0.0);
 
 	//La fonction d'affichage :
-	void Affichage();
+	void const Affichage();
 
 	//La fonction somme : 
-	Vecteur3d_exo72 Somme(Vecteur3d_exo72 &vecteur2);
+	Vecteur3d_exo72 const Somme(Vecteur3d_exo72 &vecteur2);
 
 	//La fonction scalaire :
-	float Scalaire(Vecteur3d_exo72 &vecteur2);
+	float const Scalaire(Vecteur3d_exo72 &vecteur2);
 };

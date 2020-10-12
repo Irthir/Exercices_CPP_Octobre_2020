@@ -14,14 +14,14 @@ public:
 	inline cVecteur3d(float fX = 0.0, float fY = 0.0, float fZ = 0.0){ this->m_fX = fX; this->m_fY = fY; this->m_fZ = fZ; }
 
 	//Question 70) a)
-	static bool Coincide(cVecteur3d v1, cVecteur3d v2);
+	static const bool Coincide(cVecteur3d v1, cVecteur3d v2);
 	//Question 70) b)
-	static bool Coincide(cVecteur3d* v1, cVecteur3d* v2);
+	static const bool Coincide(cVecteur3d* v1, cVecteur3d* v2);
 	//Question 70) b)
-	static bool Coincide(cVecteur3d &v1, cVecteur3d &v2);
+	static const bool Coincide(cVecteur3d &v1, cVecteur3d &v2);
 
 	//Question 71) a)
-	static float Normax(cVecteur3d v1, cVecteur3d v2);
+	static const float Normax(cVecteur3d v1, cVecteur3d v2);
 	//Question 71) b)
 	static void Normax(cVecteur3d v1, cVecteur3d v2, float &fNormax);
 	//Question 71) c)
