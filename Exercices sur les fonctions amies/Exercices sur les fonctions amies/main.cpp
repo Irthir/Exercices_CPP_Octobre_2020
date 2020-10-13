@@ -38,7 +38,8 @@ int main()
 	{
 		for (int nJ = 0; nJ < 3; nJ++)
 		{
-			dTab[nI][nJ] = (int)(long)nI + nJ;
+			long nResult = nI + nJ;
+			dTab[nI][nJ] = (int)nResult;
 		}
 	}
 	CMatrice mMatrice(dTab);

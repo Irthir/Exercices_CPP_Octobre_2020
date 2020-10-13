@@ -3,23 +3,22 @@
 
 CVect Prod(CMatrice mMatrice, CVect vVect)
 {
-	double dX=0;
-	double dY=0;
-	double dZ=0;
+	double vecResultTab[3] = { 0 };
 
-	dX += (mMatrice.m_dMatrice[0][0] * vVect.m_dX);
-	dX += (mMatrice.m_dMatrice[1][0] * vVect.m_dY);
-	dX += (mMatrice.m_dMatrice[2][0] * vVect.m_dZ);
+	double vecTab[3] = { 0 };
+	vecTab[0] = vVect.m_dX;
+	vecTab[1] = vVect.m_dY;
+	vecTab[2] = vVect.m_dZ;
 
-	dY += (mMatrice.m_dMatrice[0][1] * vVect.m_dX);
-	dY += (mMatrice.m_dMatrice[1][1] * vVect.m_dY);
-	dY += (mMatrice.m_dMatrice[2][1] * vVect.m_dZ);
-	
-	dZ += (mMatrice.m_dMatrice[0][2] * vVect.m_dX);
-	dZ += (mMatrice.m_dMatrice[1][2] * vVect.m_dY);
-	dZ += (mMatrice.m_dMatrice[2][2] * vVect.m_dZ);
+	for (int nJ = 0; nJ < 3;nJ++)
+	{
+		for (int nI = 0; nI < 3; nI++)
+		{
+			vecResultTab[nJ] += (mMatrice.m_dMatrice[nI][nJ] * vecTab[nI]);
+		}
+	}
 
-	CVect vResult(dX,dY,dZ);
+	CVect vResult(vecResultTab[0], vecResultTab[1], vecResultTab[2]);
 
 	return vResult;
 }
