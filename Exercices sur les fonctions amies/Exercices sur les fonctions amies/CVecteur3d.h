@@ -9,5 +9,5 @@ public:
 			{ x = c1; y = c2; z = c3; }
 
 	//Exercice 82
-	bool friend coincide(vecteur3d vec1, vecteur3d vec2);
+	bool friend coincide(vecteur3d &vec1, vecteur3d &vec2);
 };
