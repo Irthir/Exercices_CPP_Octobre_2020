@@ -1,5 +1,6 @@
 #include <iostream>
 #include "vecteur3d.h"
+#include "vec3d.h"
 
 using namespace std;
 
@@ -17,6 +18,11 @@ int main()
 	vVec2.affiche();
 	float fScalaire = vVec * vVec2;
 	cout << "Produit scalaire de nos deux vecteurs : "<< fScalaire<<endl;
+
+	//Exercice 86
+	vec3d monVec;
+	monVec[1] = 3;
+	cout << monVec[1] << endl;
 
 	return 0;
 }
