@@ -3,6 +3,9 @@
 #include <locale.h>
 #include "demo.h"
 #include "point.h"
+#include "set_int.h"
+#include <stdlib.h>
+#include <time.h>  
 
 using namespace std;
 
@@ -51,11 +54,29 @@ int main()
 		destruction : 1 0*/
 
 	//Exercice 76
-	point pTab[4];
+	point *pTab=new point[4];
 	delete[] pTab;
 
 	//Exercice 77
+	set_int monTab;
+	cout << "Notre tableau a une taille : " << monTab.cardinal() << endl;
 
+	srand((unsigned int)time(NULL));
+	int nDifferent = 0;
+	for (int nI = 0; nI < 20; nI++)
+	{
+		int nTemp = rand() % 20;
+		if (!monTab.appartient(nTemp))
+		{
+			nDifferent++;
+		}
+		monTab.ajout(nTemp);
+	}
+	cout << "Notre tableau a une taille : " << monTab.cardinal() << endl;
+	monTab.affiche();
+	cout << "Il possède " << nDifferent << " nombre differents." << endl;
+
+	//Il faut créer un constructeur de copie pour éviter que l'élément dynamique soit détruit à la fin d'une procédure.
 
 	return 0;
 }
