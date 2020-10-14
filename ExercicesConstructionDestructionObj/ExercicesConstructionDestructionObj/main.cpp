@@ -50,9 +50,12 @@ int main()
 		destruction : 2 0
 		destruction : 1 0*/
 
-		//Exercice 76
+	//Exercice 76
 	point pTab[4];
 	delete[] pTab;
+
+	//Exercice 77
+
 
 	return 0;
 }

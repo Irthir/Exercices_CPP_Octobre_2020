@@ -16,7 +16,7 @@ public:
 	//Le Destructeur
 	~CPoint();
 
-	static const float Nombre();
+	static const int Nombre();
 
 	//Assesseurs :
 	inline float const getX() { return this->m_fX; }

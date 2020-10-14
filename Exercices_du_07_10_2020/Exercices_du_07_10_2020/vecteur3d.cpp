@@ -56,6 +56,35 @@ bool const cVecteur3d::Coincide(cVecteur3d& v1, cVecteur3d& v2)
 	return ((v1.getX() == v2.getX()) && (v1.getY() == v2.getY()) && (v1.getZ() == v2.getZ()));
 }
 
+//Version 2 \o/
+
+// Question 70) a)
+bool const cVecteur3d::Coincide(cVecteur3d v1)
+//BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
+//ENTREE : Deux vecteurs.
+//SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
+{
+	return ((v1.getX() == this->getX()) && (v1.getY() == this->getY()) && (v1.getZ() == this->getZ()));
+}
+
+//Question 70) b)
+bool const cVecteur3d::Coincide(cVecteur3d* v1)
+//BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
+//ENTREE : Deux vecteurs.
+//SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
+{
+	return ((v1->getX() == this->getX()) && (v1->getY() == this->getY()) && (v1->getZ() == this->getZ()));
+}
+
+//Question 70) c)
+bool const cVecteur3d::Coincide(cVecteur3d& v1)
+//BUT : Comparer deux vecteurs et renvoyer un booléen selon si ils sont confondus ou non.
+//ENTREE : Deux vecteurs.
+//SORTIE : Vrai si ils sont confonuds, Faux dans le cas contraire.
+{
+	return ((v1.getX() == this->getX()) && (v1.getY() == this->getY()) && (v1.getZ() == this->getZ()));
+}
+
 //Question 71) a)
 float const cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2)
 //BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
@@ -72,7 +101,7 @@ float const cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2)
 }
 
 //Question 71) b)
-void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float& fNormax)
+float& cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float& fNormax)
 //BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
 //ENTREE : Deux vecteurs 3D.
 //SORTIE : La norme la plus élevées parmis les deux normes.
@@ -84,10 +113,11 @@ void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float& fNormax)
 		fNormax=fNorme1;
 	else
 		fNormax=fNorme2;
+	return fNormax;
 }
 
 //Question 71) c)
-void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float *fNormax)
+float* cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float *fNormax)
 //BUT : Renvoyer la plus grande norme parmis celle de deux vecteur.
 //ENTREE : Deux vecteurs 3D.
 //SORTIE : La norme la plus élevées parmis les deux normes.
@@ -99,4 +129,5 @@ void cVecteur3d::Normax(cVecteur3d v1, cVecteur3d v2, float *fNormax)
 		*fNormax = fNorme1;
 	else
 		*fNormax = fNorme2;
+	return fNormax;
 }

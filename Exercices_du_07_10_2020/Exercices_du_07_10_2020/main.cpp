@@ -23,7 +23,7 @@ int main()
 	
 	//Question 70)
 	cout << "Notre Vecteur 1 et notre Vecteur 2 sont identiques : " << endl;
-	if (cVecteur3d::Coincide(&vVecteurDefaut, &vVecteurDefini)) //Passage par adresse.
+	if (vVecteurDefaut.Coincide(&vVecteurDefini))//(cVecteur3d::Coincide(&vVecteurDefaut, &vVecteurDefini)) //Passage par adresse.
 		cout << "-Cela est vrai." << endl;
 	else
 		cout << "-Cela est faux." << endl;

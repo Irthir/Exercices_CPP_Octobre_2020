@@ -9,11 +9,13 @@ using namespace std;
 int main()
 {
 	//Exercice 81
+	point pPoing(4, 4); //point de classe automatique
 	point* pPoint = new point(3,3); //point de classe dynamique
-	point pPoing(4,4); //point de classe automatique
 
 	Affiche(*pPoint);
 	Affiche(pPoing);
+
+	delete pPoint;
 
 
 	//Exercice 82
