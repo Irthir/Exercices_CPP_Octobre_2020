@@ -124,10 +124,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="vecteur3d_84.cpp" />
+    <ClCompile Include="vecteur3d.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vecteur3d_84.h" />
+    <ClInclude Include="vecteur3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
