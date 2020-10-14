@@ -52,6 +52,7 @@ int main()
 
 		//Exercice 76
 	point pTab[4];
+	delete[] pTab;
 
 	return 0;
 }
