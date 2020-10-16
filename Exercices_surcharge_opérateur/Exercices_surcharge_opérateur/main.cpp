@@ -2,6 +2,7 @@
 #include "vecteur3d.h"
 #include "vec3d.h"
 #include "set_int.h"
+#include "vecteur3d_exo89.h"
 
 using namespace std;
 
@@ -40,6 +41,9 @@ int main()
 	siNumero1 < 4250;
 	if (siNumero1[4250])
 		siNumero1.affiche();
+	
+	//Exercice 89
+	//Voir les fichiers vecteur3d_exo89
 
 	return 0;
 }
