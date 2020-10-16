@@ -1,6 +1,7 @@
 #include <iostream>
 #include "vecteur3d.h"
 #include "vec3d.h"
+#include "set_int.h"
 
 using namespace std;
 
@@ -23,6 +24,17 @@ int main()
 	vec3d monVec;
 	monVec[1] = 3;
 	cout << monVec[1] << endl;
+
+	//Exercice 87
+	set_int siNumero1(100);
+	set_int siNumero2(100);
+	for (int nI = 0; nI < 100; nI++)
+	{
+		siNumero1.ajout(nI);
+	}
+	siNumero2 = siNumero1 = siNumero2 = siNumero1;
+	siNumero1.affiche();
+	siNumero2.affiche();
 
 	return 0;
 }

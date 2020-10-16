@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="set_int.cpp" />
     <ClCompile Include="vec3d.cpp" />
     <ClCompile Include="vecteur3d.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="set_int.h" />
     <ClInclude Include="vec3d.h" />
     <ClInclude Include="vecteur3d.h" />
   </ItemGroup>
