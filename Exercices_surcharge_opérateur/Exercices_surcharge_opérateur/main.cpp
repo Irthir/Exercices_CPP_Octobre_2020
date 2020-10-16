@@ -3,6 +3,7 @@
 #include "vec3d.h"
 #include "set_int.h"
 #include "vecteur3d_exo89.h"
+#include "vect.h"
 
 using namespace std;
 
@@ -44,6 +45,9 @@ int main()
 	
 	//Exercice 89
 	//Voir les fichiers vecteur3d_exo89
+
+	//Exercice 90
+
 
 	return 0;
 }

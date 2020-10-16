@@ -126,12 +126,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="set_int.cpp" />
     <ClCompile Include="vec3d.cpp" />
+    <ClCompile Include="vect.cpp" />
     <ClCompile Include="vecteur3d.cpp" />
     <ClCompile Include="vecteur3d_exo89.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="set_int.h" />
     <ClInclude Include="vec3d.h" />
+    <ClInclude Include="vect.h" />
     <ClInclude Include="vecteur3d.h" />
     <ClInclude Include="vecteur3d_exo89.h" />
   </ItemGroup>
