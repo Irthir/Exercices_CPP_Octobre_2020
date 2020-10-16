@@ -28,13 +28,18 @@ int main()
 	//Exercice 87
 	set_int siNumero1(100);
 	set_int siNumero2(100);
-	for (int nI = 0; nI < 100; nI++)
+	for (int nI = 0; nI < 50; nI++)
 	{
 		siNumero1.ajout(nI);
 	}
 	siNumero2 = siNumero1 = siNumero2 = siNumero1;
 	siNumero1.affiche();
 	siNumero2.affiche();
+
+	//Exercice 88
+	siNumero1 < 4250;
+	if (siNumero1[4250])
+		siNumero1.affiche();
 
 	return 0;
 }

@@ -25,4 +25,6 @@ public:
 
 	//Les surcharges d'opérateur
 	set_int& operator = (const set_int& sInt);
+	set_int& operator < (const int& nX);
+	bool operator[](const int& nX);
 };

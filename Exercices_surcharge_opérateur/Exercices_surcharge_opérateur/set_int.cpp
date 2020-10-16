@@ -72,3 +72,14 @@ set_int& set_int::operator=(const set_int& sInt)
 
 	return *this;
 }
+
+set_int& set_int::operator<(const int& nX)
+{
+	this->ajout(nX);
+	return *this;
+}
+
+bool set_int::operator[](const int& nX)
+{
+	return this->appartient(nX);
+}
